@@ -1,2 +1,1 @@
-export * from "./TeacherTable";
-
+export { TeacherTable } from "./TeacherTable";

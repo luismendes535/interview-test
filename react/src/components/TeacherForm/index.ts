@@ -1,2 +1,1 @@
-export * from "./TeacherForm";
-
+export { TeacherForm } from "./TeacherForm";

@@ -109,7 +109,7 @@ export function useSchoolDispatch() {
 
 export function schoolReducer(
   state: InitialState,
-  action: SchoolAction
+  action: SchoolAction,
 ): InitialState {
   switch (action.type) {
     case SchoolActionKind.ADD_TEACHER:
