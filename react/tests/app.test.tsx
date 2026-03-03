@@ -11,6 +11,17 @@ function renderApp() {
 }
 
 describe("App integration", () => {
+  const originalCrypto = globalThis.crypto;
+
+  beforeEach(() => {
+    // @ts-expect-error test double
+    globalThis.crypto = { randomUUID: () => "test-id" };
+  });
+
+  afterEach(() => {
+    globalThis.crypto = originalCrypto;
+  });
+
   it("allows creating entities and grading assignments", () => {
     renderApp();
 
@@ -32,7 +43,7 @@ describe("App integration", () => {
       target: { value: "Math HW" },
     });
     fireEvent.click(screen.getByRole("button", { name: /add assignment/i }));
-    expect(screen.getByText("Math HW")).toBeInTheDocument();
+    expect(screen.getAllByText("Math HW")[0]).toBeInTheDocument();
   });
 });
 

@@ -1,2 +1,1 @@
-export * from "./StudentTable";
-
+export { StudentTable } from "./StudentTable";

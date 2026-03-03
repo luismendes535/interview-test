@@ -1,0 +1,18 @@
+.assignment-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.assignment-form label {
+  font-weight: 500;
+}
+
+.assignment-form input {
+  padding: 0.25rem 0.5rem;
+}
+
+.assignment-form button {
+  padding: 0.25rem 0.75rem;
+}
+

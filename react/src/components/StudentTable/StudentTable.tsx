@@ -3,6 +3,7 @@ import type {
   Student,
   StudentAssignment,
 } from "../../school-context";
+import "./StudentTable.css";
 
 type StudentTableProps = {
   students: Student[];
@@ -45,7 +46,7 @@ export function StudentTable({
   );
 
   return (
-    <table>
+    <table className="student-table">
       <thead>
         <tr>
           <th>Id</th>

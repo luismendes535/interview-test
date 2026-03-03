@@ -1,0 +1,21 @@
+.teacher-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.teacher-table th,
+.teacher-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.teacher-table th {
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+.teacher-table ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+

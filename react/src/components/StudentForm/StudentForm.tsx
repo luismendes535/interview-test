@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SchoolActionKind, useSchoolDispatch } from "../../school-context";
+import "./StudentForm.css";
 
 export function StudentForm() {
   const schoolDispatch = useSchoolDispatch();
@@ -20,7 +21,7 @@ export function StudentForm() {
   const isValid = name.trim() !== "";
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="student-form" onSubmit={handleSubmit}>
       <label htmlFor="student">Student name</label>
       <input
         type="text"

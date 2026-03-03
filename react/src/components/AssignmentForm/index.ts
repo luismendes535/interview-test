@@ -1,2 +1,1 @@
-export * from "./AssignmentForm";
-
+export { AssignmentForm } from "./AssignmentForm";

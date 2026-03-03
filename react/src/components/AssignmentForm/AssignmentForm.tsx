@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { SchoolActionKind, useSchoolDispatch } from "../../school-context";
+import "./AssignmentForm.css";
 
 export function AssignmentForm() {
   const dispatch = useSchoolDispatch();
@@ -20,7 +21,7 @@ export function AssignmentForm() {
   const isValid = title.trim() !== "";
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="assignment-form" onSubmit={handleSubmit}>
       <label htmlFor="assignment-title">New assignment</label>
       <input
         id="assignment-title"

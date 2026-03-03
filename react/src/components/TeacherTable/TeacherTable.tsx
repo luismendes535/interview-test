@@ -1,4 +1,5 @@
 import type { Student, Teacher } from "../../school-context";
+import "./TeacherTable.css";
 
 type TeacherTableProps = {
   teachers: Teacher[];
@@ -24,7 +25,7 @@ export function TeacherTable({
   );
 
   return (
-    <table>
+    <table className="teacher-table">
       <thead>
         <tr>
           <th>Id</th>

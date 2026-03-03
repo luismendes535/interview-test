@@ -1,0 +1,18 @@
+.teacher-form {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.teacher-form label {
+  font-weight: 500;
+}
+
+.teacher-form input {
+  padding: 0.25rem 0.5rem;
+}
+
+.teacher-form button {
+  padding: 0.25rem 0.75rem;
+}
+
